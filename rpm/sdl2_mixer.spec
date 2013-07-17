@@ -3,8 +3,9 @@ Name: SDL2_mixer
 Version: 2.0.0
 Release: 1
 Source: http://www.libsdl.org/projects/%{name}/release/%{name}-%{version}.tar.gz
+URL: http://www.libsdl.org/projects/SDL_mixer/
 License: zlib
-Group: System Environment/Libraries
+Group: Applications/Multimedia
 BuildRequires: pkgconfig(sdl2)
 BuildRequires: pkgconfig(ogg)
 BuildRequires: pkgconfig(vorbisfile)
@@ -17,7 +18,7 @@ of music, mixed by the popular MikMod MOD, Timidity MIDI, Ogg Vorbis,
 Tremor, SMPEG MP3, and libmad MP3 libraries.
 
 %package devel
-Summary: Libraries, includes and more to develop SDL applications.
+Summary: Simple DirectMedia Layer - Sampler Mixer Library (Development)
 Group: Development/Libraries
 Requires: %{name}
 
@@ -36,6 +37,12 @@ make
 
 %install
 %make_install
+
+%post
+/sbin/ldconfig
+
+%postun
+/sbin/ldconfig
 
 %files
 %defattr(-,root,root)
