@@ -1,7 +1,7 @@
 Summary: Simple DirectMedia Layer - Sample Mixer Library
 Name: SDL2_mixer
 Version: 2.0.0
-Release: 4
+Release: 5
 Source: http://www.libsdl.org/projects/%{name}/release/%{name}-%{version}.tar.gz
 URL: http://www.libsdl.org/projects/SDL_mixer/
 License: zlib
