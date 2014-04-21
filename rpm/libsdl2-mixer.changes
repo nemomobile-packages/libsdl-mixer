@@ -1,0 +1,5 @@
+* Tue Sep 17 2013 Thomas Perl <thomas.perl@jollamobile.com> - 2.0.0-nemo3
+- [nemo] Add optional MP3-supporting packaging using smpeg.
+
+* Thu Jul 18 2013 Thomas Perl <thomas.perl@jollamobile.com> - 2.0.0-nemo2
+- [nemo] Package SDL2_mixer. Fixes JB#7511
